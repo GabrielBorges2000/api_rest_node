@@ -1,27 +1,28 @@
 # Primeira API NODE 
 
-Neste Projeto foi Criado uma API REST utilizando node!
+    Neste Projeto foi Criado uma API REST utilizando node!
+    
 
--Techs utilizadas
-    -NODE
-    -INSÔMINIA
-    -JAVASCRIPT
+    -Techs utilizadas:
+        -NODE
+        -INSÔMINIA
+        -JAVASCRIPT
 
 _______________________________________________________________________________________________
 
 # ANOTAÇÕES:
 
-Para iniciar o servidor basta rodar o seguinte comando no terminal:
+    Para iniciar o servidor basta rodar o seguinte comando no terminal:
 
 `npm run dev`
 # Para criar uma API é necessário rotas
 
-Exemplo:
+    Exemplo:
 
-- Criar usuário
-- Listagem de usuário
-- Edição de usuário
-- Remoção de usuário
+    - Criar usuário
+    - Listagem de usuário
+    - Edição de usuário
+    - Remoção de usuário
 
 _______________________________________________________________________________________________
 
@@ -35,9 +36,9 @@ ________________________________________________________________________________
     
     - GET => Buscar uma informação do back-end
     - POST => Criar uma informação do back-end
-    - PUT =. Atualizar um recurso no back-end, no caso muitas informação de uma unica vez
+    - PUT => Atualizar um recurso no back-end
     - Patch => Atualizar uma informação especifica de um recurso no back-end
-    - DELETE =. Deletar algo no meu back-end
+    - DELETE => Deletar algo no meu back-end
 
         a jusção do metodo e da url que gera a minha ação, exemplo: 
 
