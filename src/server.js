@@ -39,9 +39,22 @@ Remoção de usuário
 
 const users = []
 
-const server = http.createServer((req, res) => {
+const server = http.createServer(async (req, res) => {
     const {method, url} = req
-    
+
+    const Buffers = []
+
+    for await (const chunk of req) {
+        Buffers.push(chunk)
+    }
+
+    try {
+        req.body = JSON.parse(Buffer.concat(Buffers).toString())
+    } catch {
+        req.body = null
+    }
+
+        
     if(method === 'GET' && url === '/users'){
         return res
         .setHeader('Content-type', 'application/json')
@@ -49,10 +62,12 @@ const server = http.createServer((req, res) => {
     }
 
     if(method === 'POST' && url === '/users'){
+        const {id, name, email} = req.body
+
         users.push({
-            id: 1,
-            name: 'John Doe',
-            email: 'joaquim@example.com'
+            id,
+            name,
+            email,
         })
 
         return res.writeHead(201).end()
