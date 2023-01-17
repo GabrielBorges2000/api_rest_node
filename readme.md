@@ -1,7 +1,7 @@
 # Primeira API NODE 
 
     Neste Projeto foi Criado uma API REST utilizando node!
-    
+
 
     -Techs utilizadas:
         -NODE
@@ -40,7 +40,7 @@ ________________________________________________________________________________
     - Patch => Atualizar uma informação especifica de um recurso no back-end
     - DELETE => Deletar algo no meu back-end
 
-        a jusção do metodo e da url que gera a minha ação, exemplo: 
+    A junção do metodo e da url que gera a minha ação, exemplo: 
 
     GET /user => Buscando usuário no back-end
     POST /user = Criar um usuário no back-end
@@ -64,7 +64,8 @@ ________________________________________________________________________________
     -Route Parameters : Identificação de Recurso => Algo Especifico
     -Request Body : Envio de informação de formulário => utiliza metodo https
 
-
+    Exemplo: 
+    
     http://localhost:3333/users?userId=1  Query Parameters 
     http://localhost:3333/users/1  Route Parameters 
     http://localhost:3333/users  Request Body Parameters
