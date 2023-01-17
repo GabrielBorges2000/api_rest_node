@@ -31,3 +31,18 @@ Remoção de usuário
     JSON : JavaScript Object Notation 
 
     HTTP STATUS CODE : 100, 200, 300, 400, 500
+
+# Formas de enviar informação
+
+-Query Parameters : URL Stateful => Filtros, paginação, não-obrigatórios
+-Route Parameters : Identificação de Recurso 
+-Request Body : Envio de informação de formulário
+
+http://localhost:3333/users?userId=1  <!-- Query Parameters -->
+http://localhost:3333/users/1  <!-- Route Parameters -->
+http://localhost:3333/users  <!-- Request Body Parameters -->
+
+
+
+
+
